@@ -6,22 +6,6 @@ Flutter, Data analytics and visualisation
 
 ## Maintainers ☀️
 
-<table role="table">
-<thead>
-<tr>
-<th align="center">
-<a href="https://github.com/Ananyaiitbhilai"><img src="https://avatars.githubusercontent.com/u/65886348?s=400&u=003df6fcebcf160cce657dc62209916ae617259a&v=4" width="100px;"><br><sub>Ananya Hooda
-</sub></a><br>
-</th>
-
-<th align="center">
-<a href="https://github.com/Apoorvgarg-creator"><img src="https://avatars.githubusercontent.com/u/57873504?v=4" width="100px;"><br><sub>Apoorv Garg
-</sub></a><br>
-</th>
-</tr>
-</thead>
-</table>
-
 | [@Ananya Hooda](https://github.com/Ananyaiitbhilai) | [@Apoorv Garg](https://github.com/Apoorvgarg-creator) | [@Nishant Androriya](https://github.com/M-A-D-A-R-A) |
 |----------|-------------|-----------|
 
