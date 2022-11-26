@@ -6,7 +6,7 @@ Flutter, Data analytics and visualisation
 
 ## Maintainers ☀️
 ----
-[@Ananya Hooda](https://github.com/Ananyaiitbhilai) | [@Apoorv Garg](https://github.com/Apoorvgarg-creator) | [@Nishant Androriya](https://github.com/M-A-D-A-R-A)
+| [@Ananya Hooda](https://github.com/Ananyaiitbhilai) | [@Apoorv Garg](https://github.com/Apoorvgarg-creator) | [@Nishant Androriya](https://github.com/M-A-D-A-R-A) |
 -----
 
 ## Other details 📑
