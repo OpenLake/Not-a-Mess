@@ -5,7 +5,9 @@ Students face a lot of problems regarding mess food. We aim to make an app where
 Flutter, Data analytics and visualisation
 
 ## Maintainers ☀️
-[@Ananya Hooda](https://github.com/Ananyaiitbhilai), [@Apoorv Garg](https://github.com/Apoorvgarg-creator), [@Nishant Androriya](https://github.com/M-A-D-A-R-A)
+----
+[@Ananya Hooda](https://github.com/Ananyaiitbhilai) | [@Apoorv Garg](https://github.com/Apoorvgarg-creator) | [@Nishant Androriya](https://github.com/M-A-D-A-R-A)
+-----
 
 ## Other details 📑
 This project is in its first iteration hence have to be started from Scratch. You need not to be proficient in the Techstack mentioned but should have basic understanding of the things. 
