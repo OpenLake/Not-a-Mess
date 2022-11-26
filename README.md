@@ -2,7 +2,7 @@
 Students face a lot of problems regarding mess food. We aim to make an app where students can report issues as well as rate mess food on a daily basis. The app can be used by the mess manager to know the amount of food to be prepared on a particular day, take a look into the dashboard where analysis and statistics of all the issues and complaints would be available.
 
 ## Techstack 👩‍💻
-React-native/ Flutter, Data analytics and visualisation
+Flutter, Data analytics and visualisation
 
 ## Maintainers ☀️
 [@Ananyaiitbhilai](https://github.com/Ananyaiitbhilai) 
