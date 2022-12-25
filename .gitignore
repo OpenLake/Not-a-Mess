@@ -1,2 +1,4 @@
 .dart_tool/
 build/
+/node_modules
+/.DS_Store
