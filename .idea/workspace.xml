@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="898aaf97-2f39-40f9-8c84-0b8337da828b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/constants/colors.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/menu.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/chip_builder.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/choice_chip_buider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/star_rating.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rating.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/registration.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
@@ -43,7 +40,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Flutter_trial/test2" />
     <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
