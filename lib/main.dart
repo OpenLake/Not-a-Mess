@@ -1,60 +1,81 @@
 import 'dart:ffi';
 import 'package:flutter/material.dart';
+import 'package:not_a_mess/widgets/chip_builder.dart';
+import 'package:not_a_mess/widgets/choice_chip_buider.dart';
+import 'package:not_a_mess/widgets/star_rating.dart';
+import 'constants/colors.dart';
 
 void main() {
   runApp(
     MaterialApp(
+      theme: ThemeData(
+        // Define the default brightness and colors.
+        brightness: Brightness.light,
+
+        // Define the default font family.
+        fontFamily: 'Georgia',
+
+        // Define the default `TextTheme`. Use this to specify the default
+        // text styling for headlines, titles, bodies of text, and more.
+        textTheme: const TextTheme(
+          headline1: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
+          headline6: TextStyle(fontSize: 25.0, fontStyle: FontStyle.italic),
+          bodyText1: TextStyle(
+              fontSize: 16.0, color: Colors.white, fontFamily: 'Hind'),
+        ),
+      ),
       home: MyApp(),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff001F3D),
-      body: Container(
-        width: double.maxFinite,
+      backgroundColor: backgroundColor,
+      body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          verticalDirection: VerticalDirection.down,
+          children: [
+            SizedBox(
+              height: 150,
+            ),
+            Container(
+              child: Text(
+                "NARIYAL CHUTNEY",
+                style: TextStyle(
+                  color: primaryColor,
+                  fontSize: 30,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
 
-          children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(25),
-              child: Text("Register", style: TextStyle(fontWeight: FontWeight.w700,fontSize: 50, color: Color(0xffFF6868),)),
+              padding: EdgeInsets.symmetric(horizontal: 0.18*(MediaQuery. of(context). size. width)),
+              child: Rating(),
             ),
-            TextButton.icon(
-              onPressed: () {
-                print("Testing this");
-              },
-              icon: Icon(Icons.school),
-              label: Text("Student", style: TextStyle(fontSize: 34)),
-              style: TextButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Color(0xff001F3D),
-                  padding: EdgeInsets.symmetric(vertical: 15, horizontal: 62)),
+
+            SizedBox(
+              height: 50,
             ),
-            SizedBox(height: 15),
-            TextButton.icon(
-              onPressed: () {
-                print("Testing this");
-              },
-              icon: Icon(Icons.food_bank),
-              label: Text("Maintainer", style: TextStyle(fontSize: 34)),
-              style: TextButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Color(0xff001F3D),
-                  padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40)),
-            ),
-            SizedBox(height: 100),
-            Image(image: AssetImage("assets/logo.png"), color: Colors.white, height: 100,),
-            Text("Not A Mess", style: TextStyle(fontSize: 25, fontWeight:FontWeight.w900, color: Colors.white))
+
+            Wrap(spacing: 8, children: <Widget>[
+              ChoiceChipBuild("undercooked"),
+              ChoiceChipBuild("too oily"),
+              ChoiceChipBuild("too spicy"),
+              ChoiceChipBuild("overcooked"),
+              ChoiceChipBuild("needs more salt"),
+              ChoiceChipBuild("stale")
+            ]),
           ],
         ),
       ),
     );
   }
 }
+
