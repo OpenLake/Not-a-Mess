@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 .dart_tool/
 build/
 /node_modules
 /.DS_Store
-=======
-/node_modules
->>>>>>> 078e02685503d155cc68d06f931aa5a71d86e846

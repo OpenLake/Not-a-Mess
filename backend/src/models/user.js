@@ -5,9 +5,10 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    id: {
+    email: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     mngmt: {
         type: Boolean,

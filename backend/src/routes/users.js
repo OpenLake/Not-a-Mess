@@ -25,8 +25,8 @@ router.get('/:id', async(req, res) => {
 router.post('/', async(req, res) => {
     const user = new User({
         name: req.body.name,
-        id: req.body.id,
-        mngmt: req.body.mngmt
+        email: req.body.email,
+        mngmt: req.body.mngmt,
     })
 
     try{
@@ -41,8 +41,6 @@ router.post('/', async(req, res) => {
 router.delete('/:id', async(req, res) => {
     try{
         const user = await User.findByIdAndDelete(req.params.id)
-        // const u1 = await user.delete()
-        // res.json(u1)
         res.send('Deleted Record...')
     }catch(err){
         res.send('Error')
@@ -53,7 +51,7 @@ router.patch('/:id', async(req, res) => {
     try{
         const user = await User.findById(req.params.id)
         user.name = req.body.name
-        user.id = req.body.id
+        user.email = req.body.email
         user.mngmt = req.body.mngmt
         const u1 = await user.save()
         res.json(u1)
