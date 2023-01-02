@@ -2,27 +2,26 @@ const express = require('express')
 const router = express.Router()
 const Rating = require('../models/rating')
 
-
-router.get('/', async(req, res) => {
+exports.ratings_get_all = async(req, res) => {
     try{
-            const ratings = await Rating.find()
-            res.json(ratings)
+        const ratings = await Rating.find()
+        res.json(ratings)
     }catch(err){
         res.send('Error' + err)
     }
-})
+}
 
-router.get('/:id', async(req, res) => {
+exports.ratings_get_id = async(req, res) => {
     try{
             const rating = await Rating.findById(req.params.id)
             res.json(rating)
     }catch(err){
         res.send('Error' + err)
     }
-})
+}
 
 
-router.post('/', async(req, res) => {
+exports.ratings_post = async(req, res) => {
     const rating = new Rating({
         date: req.body.date,
         user_id: req.body.user_id,
@@ -37,19 +36,19 @@ router.post('/', async(req, res) => {
     }catch(err){
         res.send('Error')
     }
-})
+}
 
 
-router.delete('/:id', async(req, res) => {
+exports.ratings_delete = async(req, res) => {
     try{
         const rating = await Rating.findByIdAndDelete(req.params.id)
         res.send('Deleted Record...')
     }catch(err){
         res.send('Error')
     }
-})
+}
 
-router.patch('/:id', async(req, res) => {
+exports.ratings_patch = async(req, res) => {
     try{
         const rating = await Rating.findById(req.params.id)
         rating.date = req.body.date
@@ -62,7 +61,7 @@ router.patch('/:id', async(req, res) => {
     }catch(err){
         res.send('Error')
     }
-})
+}
 
 
 module.exports = router

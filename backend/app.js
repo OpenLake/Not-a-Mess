@@ -13,10 +13,10 @@ db.on('open', () => {
 
 app.use(express.json())
 
-const usersRouter = require('./src/routes/users')
+const usersRouter = require('./src/routes/users.route')
 app.use('/users', usersRouter)
 
-const ratingsRouter = require('./src/routes/ratings')
+const ratingsRouter = require('./src/routes/ratings.route')
 app.use('/ratings', ratingsRouter)
 
 app.listen(9000, () => {
