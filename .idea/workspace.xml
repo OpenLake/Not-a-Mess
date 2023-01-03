@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="898aaf97-2f39-40f9-8c84-0b8337da828b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/rating.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/registration.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/bar_chart.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/bar_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/vertical_bar_chart.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/chip_builder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/chip_builder.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
