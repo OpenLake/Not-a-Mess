@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:not_a_mess/services/route_constants.dart';
 import 'package:not_a_mess/widgets/chip_builder.dart';
 import 'constants/colors.dart';
+import 'package:go_router/go_router.dart';
 
 class Menu extends StatelessWidget {
   @override
@@ -9,7 +11,10 @@ class Menu extends StatelessWidget {
       backgroundColor: backgroundColor,
       appBar: AppBar(
         backgroundColor: Color(0xffFF6868),
-        title: Center(child: Text("Today's Menu")),
+        title:  Text("Today's Menu"),
+      actions: [
+        IconButton(onPressed: (){context.pushReplacement("/issues");}, icon: Icon(Icons.edit_note_sharp))
+      ],
       ),
       body: Container(
         height: double.maxFinite,
@@ -20,35 +25,35 @@ class Menu extends StatelessWidget {
             Text("Breakfast",
                 style: TextStyle(fontSize: 25, color: Color(0xffFF6868))),
             Wrap(spacing: 3, children: <Widget>[
-              ChipBuild("UTTAPAM"),
-              ChipBuild("SAMBHAR"),
-              ChipBuild("NARIYAL CHUTNEY")
+              ChipBuild("UTTAPAM", '/rating'),
+              ChipBuild("SAMBHAR", '/rating'),
+              ChipBuild("NARIYAL CHUTNEY", '/rating')
             ]),
             SizedBox(height: 20,),
             Text("Lunch",
                 style: TextStyle(fontSize: 25, color: Color(0xffFF6868))),
             Wrap(spacing: 3, children: <Widget>[
-              ChipBuild("DAL"),
-              ChipBuild("RICE"),
-              ChipBuild("SALAD"),
-              ChipBuild("ROTI"),
-              ChipBuild("MIXED VEG"),
+              ChipBuild("DAL", '/rating'),
+              ChipBuild("RICE", '/rating'),
+              ChipBuild("SALAD", '/rating'),
+              ChipBuild("ROTI", '/rating'),
+              ChipBuild("MIXED VEG", '/rating'),
             ]),
             SizedBox(height: 20,),
             Text("Snacks",
                 style: TextStyle(fontSize: 25, color: Color(0xffFF6868))),
             Wrap(spacing: 3, children: <Widget>[
-              ChipBuild("BREAD PAKORA"),
-              ChipBuild("COFFEE"),
+              ChipBuild("BREAD PAKORA", '/rating'),
+              ChipBuild("COFFEE", '/rating'),
             ]),
             SizedBox(height: 20,),
             Text("Dinner",
                 style: TextStyle(fontSize: 25, color: Color(0xffFF6868))),
             Wrap(spacing: 3, children: <Widget>[
-              ChipBuild("RAJMA"),
-              ChipBuild("RICE"),
-              ChipBuild("ROTI"),
-              ChipBuild("FRUIT CREAM"),
+              ChipBuild("RAJMA", '/rating'),
+              ChipBuild("RICE", '/rating'),
+              ChipBuild("ROTI", '/rating'),
+              ChipBuild("FRUIT CREAM", '/rating'),
             ]),
           ],
         ),

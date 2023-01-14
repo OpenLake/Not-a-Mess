@@ -3,8 +3,6 @@ import 'package:fl_chart/fl_chart.dart';
 import 'data.dart';
 
 class BarData{
-  static int interval = 5;
-
   static List<Data> barData = [
     const Data(
       id:0,

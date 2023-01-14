@@ -1,3 +1,7 @@
+accordion
+2.17
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/accordion-2.5.1/
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/accordion-2.5.1/lib/
 async
 2.18
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/async-2.10.0/
@@ -38,6 +42,14 @@ flutter_lints
 2.17
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib/
+get
+2.15
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/get-4.6.5/
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/get-4.6.5/lib/
+go_router
+2.17
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/go_router-6.0.1/
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/go_router-6.0.1/lib/
 js
 2.19
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/js-0.6.6/
@@ -46,6 +58,10 @@ lints
 2.17
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/lints-2.0.1/
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/lints-2.0.1/lib/
+logging
+2.12
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/logging-1.1.0/
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/logging-1.1.0/lib/
 matcher
 2.18
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/matcher-0.12.14/
@@ -62,6 +78,10 @@ path
 2.12
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/path-1.8.3/
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/path-1.8.3/lib/
+scroll_to_index
+2.12
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/scroll_to_index-3.0.1/
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/scroll_to_index-3.0.1/lib/
 source_span
 2.14
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/source_span-1.9.1/
@@ -106,4 +126,8 @@ flutter_test
 2.19
 file:///home/siddhivinayak/snap/flutter/common/flutter/packages/flutter_test/
 file:///home/siddhivinayak/snap/flutter/common/flutter/packages/flutter_test/lib/
+flutter_web_plugins
+2.19
+file:///home/siddhivinayak/snap/flutter/common/flutter/packages/flutter_web_plugins/
+file:///home/siddhivinayak/snap/flutter/common/flutter/packages/flutter_web_plugins/lib/
 2
