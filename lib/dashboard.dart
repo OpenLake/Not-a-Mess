@@ -15,7 +15,10 @@ class Dashboard extends StatefulWidget {
 class _DashboardState extends State<Dashboard> {
   final Map<String, Widget> ScreenRenderer = {
     "Day": DayScreen(),
-    "Week": WeekMonthYearScreenGenerator(title: "Week", dataForHorizontalBar: [
+    "Week": WeekMonthYearScreenGenerator(
+      dataLineChart: [[3,4,2.3,5,4,3.4,2],[4,3,3.3,3.6,3,3.8,2.9],[5,2.6,4.3,3.2,3.5,3.7,4],[2.5,5,3.3,5,3,3.8,2.9]],
+        title: "Week",
+        dataForHorizontalBar: [
       FoodData("Uttapam", 4.3),
       FoodData("Sambhar", 4.2),
       FoodData("Nariyal Chutney", 4.1),
@@ -30,7 +33,9 @@ class _DashboardState extends State<Dashboard> {
       FoodData("Nariyal Chutney4", 4.1),
     ]),
     "Month":
-        WeekMonthYearScreenGenerator(title: "Month", dataForHorizontalBar: [
+        WeekMonthYearScreenGenerator(
+          dataLineChart: [[1,2,4,3], [4,3,1,2], [3,3,2,4], [3,5,2,1]],
+            title: "Month", dataForHorizontalBar: [
       FoodData("Uttapam", 3.3),
       FoodData("Sambhar", 3.2),
       FoodData("Nariyal Chutney", 3.1),
@@ -44,7 +49,9 @@ class _DashboardState extends State<Dashboard> {
       FoodData("Sambhar4", 3.2),
       FoodData("Nariyal Chutney4", 4.1),
     ]),
-    "Year": WeekMonthYearScreenGenerator(title: "Year", dataForHorizontalBar: [
+    "Year": WeekMonthYearScreenGenerator(
+      dataLineChart: [[1,1,1,1,1,1,1,1,1,1,1,1], [2,2,2,2,2,2,2,2,2,2,2,2], [3,3,3,3,3,3,3,3,3,3,3.3], [4,4,4,4,4,4,4,4,4,4,4,4]],
+        title: "Year", dataForHorizontalBar: [
       FoodData("Uttapam", 3.3),
       FoodData("Sambhar", 4.2),
       FoodData("Nariyal Chutney", 3.1),

@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import '../../../constants/colors.dart';
 import '../../star_rating.dart';
 import '../bar_data.dart';
-import '../indicator.dart';
 import '../main_bar_chart.dart';
 import '../pie_chart_creation/pie_chart.dart';
 

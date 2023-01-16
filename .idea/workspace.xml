@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="898aaf97-2f39-40f9-8c84-0b8337da828b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/day/day_screen_widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/horizontal_bar_chart_creation/horizontal_bar_chart_creation.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/indicator.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/line_chart_creation/line_chart_generator.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/pie_chart_creation/pie_chart.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/pie_chart_creation/pie_data_handler.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/week_month_year_screens/week_month_year_screen_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/colors.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dashboard.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dashboard_code.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/issues_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/issues_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/menu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menu.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/chip_builder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/chip_builder.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/choice_chip_buider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/choice_chip_buider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/accordion_widgets/breakfast_container.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/day/day_screen_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/day/day_screen_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/line_chart_creation/line_chart_generator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/line_chart_creation/line_chart_generator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/vertical_bar_chart.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/week_month_year_screens/week_month_year_screen_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/week_month_year_screens/week_month_year_screen_widget.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
