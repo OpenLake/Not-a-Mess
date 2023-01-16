@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="898aaf97-2f39-40f9-8c84-0b8337da828b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dashboard.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/day/day_screen_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/day/day_screen_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/line_chart_creation/line_chart_generator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/line_chart_creation/line_chart_generator.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/vertical_bar_chart.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/week_month_year_screens/week_month_year_screen_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/dashboard_widgets/week_month_year_screens/week_month_year_screen_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/menu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menu.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
