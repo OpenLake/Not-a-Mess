@@ -1,6 +1,8 @@
 # Not-a-Mess 🍱
 Students face a lot of problems regarding mess food. We aim to make an app where students can report issues as well as rate mess food on a daily basis. The app can be used by the mess manager to know the amount of food to be prepared on a particular day, take a look into the dashboard where analysis and statistics of all the issues and complaints would be available.
 
+#### [Download the APK from here](./apk/app-release.apk)
+
 ## Techstack 👩‍💻
 Flutter, Data analytics and visualisation, python
 
