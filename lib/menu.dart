@@ -13,7 +13,7 @@ class Menu extends StatelessWidget {
         backgroundColor: Color(0xffFF6868),
         title:  Text("Today's Menu"),
       actions: [
-        IconButton(onPressed: (){context.pushReplacement("/issues");}, icon: Icon(Icons.edit_note_sharp))
+        IconButton(onPressed: (){context.pushNamed(RouteConstants.issues);}, icon: Icon(Icons.edit_note_sharp))
       ],
       ),
       body: Container(

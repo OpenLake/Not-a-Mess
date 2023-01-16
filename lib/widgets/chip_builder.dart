@@ -5,15 +5,15 @@ import 'package:not_a_mess/constants/colors.dart';
 
 class ChipBuild extends StatelessWidget {
   final String name;
-  final double? fontsize;
+  final double? fontSize;
   final String path;
-  const ChipBuild(this.name, this.path,  {this.fontsize});
+  const ChipBuild(this.name, this.path,  {this.fontSize});
 
   @override
   Widget build(BuildContext context) {
     double? defaultFontSize = 17.0;
-    if (fontsize != null){
-      defaultFontSize = fontsize;
+    if (fontSize != null){
+      defaultFontSize = fontSize;
     };
     return ActionChip(
       onPressed: (){
