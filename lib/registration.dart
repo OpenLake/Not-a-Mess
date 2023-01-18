@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:not_a_mess/services/route_constants.dart';
 import 'constants/colors.dart';
+import 'package:go_router/go_router.dart';
 
 class Register extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,13 +13,14 @@ class Register extends StatelessWidget {
         height: double.maxFinite,
         width: double.maxFinite,
         child: Column(
-
           children: <Widget>[
             SizedBox(height: 0.23*(MediaQuery. of(context). size. height),),
             Text("Register", style: TextStyle(color: primaryColor, fontSize: 50),),
             SizedBox(height: 25,),
             TextButton.icon(
-                onPressed: (){},
+                onPressed: (){
+                  context.pushNamed(RouteConstants.menu);
+                },
                 icon: Icon(Icons.school, color: backgroundColor,),
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.symmetric(vertical: 8, horizontal: 35),
@@ -28,7 +30,9 @@ class Register extends StatelessWidget {
             ),
             SizedBox(height: 15,),
             TextButton.icon(
-                onPressed: (){},
+                onPressed: (){
+                  context.pushNamed(RouteConstants.dashboard);
+                },
                 icon: Icon(Icons.food_bank, color: backgroundColor,),
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.all(8),
