@@ -50,6 +50,10 @@ go_router
 2.17
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/go_router-6.0.1/
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/go_router-6.0.1/lib/
+intl
+2.12
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/intl-0.17.0/
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/intl-0.17.0/lib/
 js
 2.19
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/js-0.6.6/
@@ -98,6 +102,14 @@ string_scanner
 2.18
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/lib/
+syncfusion_flutter_charts
+2.17
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/syncfusion_flutter_charts-20.4.43/
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/syncfusion_flutter_charts-20.4.43/lib/
+syncfusion_flutter_core
+2.17
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/syncfusion_flutter_core-20.4.43/
+file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/syncfusion_flutter_core-20.4.43/lib/
 term_glyph
 2.12
 file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/

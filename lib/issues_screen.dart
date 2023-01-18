@@ -64,7 +64,7 @@ class _ChatScreenState extends State<ChatScreen> {
     return Scaffold(
       appBar: AppBar(
           backgroundColor: primaryColor,
-          leading: BackButton(onPressed: (){context.pushReplacement("/menu");}),
+          leading: BackButton(onPressed: (){context.pop();}),
           title: Text(
                 "Issues",
               )),

@@ -98,6 +98,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/js-0.6.6",
       "packageUri": "lib/",
@@ -176,6 +182,18 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "syncfusion_flutter_charts",
+      "rootUri": "file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/syncfusion_flutter_charts-20.4.43",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "syncfusion_flutter_core",
+      "rootUri": "file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/syncfusion_flutter_core-20.4.43",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "term_glyph",
       "rootUri": "file:///home/siddhivinayak/.pub-cache/hosted/pub.dev/term_glyph-1.2.1",
       "packageUri": "lib/",
@@ -200,7 +218,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-01-14T20:03:51.126748Z",
+  "generated": "2023-01-16T07:40:02.919598Z",
   "generator": "pub",
   "generatorVersion": "3.0.0-76.0.dev"
 }

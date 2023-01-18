@@ -1,18 +1,87 @@
-import 'package:accordion/accordion.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:not_a_mess/widgets/chip_builder.dart';
-import 'package:not_a_mess/widgets/dashboard_widgets/bar_data.dart';
-import 'package:not_a_mess/widgets/dashboard_widgets/main_bar_chart.dart';
-import 'package:not_a_mess/widgets/star_rating.dart';
+import 'package:go_router/go_router.dart';
+import 'package:not_a_mess/services/route_constants.dart';
+import 'package:not_a_mess/widgets/dashboard_widgets/day/day_screen_widget.dart';
+import 'package:not_a_mess/widgets/dashboard_widgets/horizontal_bar_chart_creation/horizontal_bar_chart_creation.dart';
+import 'package:not_a_mess/widgets/dashboard_widgets/week_month_year_screens/week_month_year_screen_widget.dart';
 import 'constants/colors.dart';
 
-class Dashboard extends StatelessWidget {
+class Dashboard extends StatefulWidget {
+  @override
+  State<Dashboard> createState() => _DashboardState();
+}
+
+class _DashboardState extends State<Dashboard> {
+  final Map<String, Widget> ScreenRenderer = {
+    "Day": DayScreen(),
+    "Week": WeekMonthYearScreenGenerator(
+      dataLineChart: [[3,4,2.3,5,4,3.4,2],[4,3,3.3,3.6,3,3.8,2.9],[5,2.6,4.3,3.2,3.5,3.7,4],[2.5,5,3.3,5,3,3.8,2.9]],
+        title: "Week",
+        dataForHorizontalBar: [
+      FoodData("Uttapam", 4.3),
+      FoodData("Sambhar", 4.2),
+      FoodData("Nariyal Chutney", 4.1),
+      FoodData("Uttapam2", 4.3),
+      FoodData("Sambhar2", 4.2),
+      FoodData("Nariyal Chutney2", 4.1),
+      FoodData("Uttapam3", 4.3),
+      FoodData("Sambhar3", 4.2),
+      FoodData("Nariyal Chutney3", 4.1),
+      FoodData("Uttapam4", 4.3),
+      FoodData("Sambhar4", 4.2),
+      FoodData("Nariyal Chutney4", 4.1),
+    ]),
+    "Month":
+        WeekMonthYearScreenGenerator(
+          dataLineChart: [[1,2,4,3], [4,3,1,2], [3,3,2,4], [3,5,2,1]],
+            title: "Month", dataForHorizontalBar: [
+      FoodData("Uttapam", 3.3),
+      FoodData("Sambhar", 3.2),
+      FoodData("Nariyal Chutney", 3.1),
+      FoodData("Uttapam2", 4.3),
+      FoodData("Sambhar2", 4.2),
+      FoodData("Nariyal Chutney2", 4.1),
+      FoodData("Uttapam3", 3.3),
+      FoodData("Sambhar3", 4.2),
+      FoodData("Nariyal Chutney3", 4.1),
+      FoodData("Uttapam4", 4.3),
+      FoodData("Sambhar4", 3.2),
+      FoodData("Nariyal Chutney4", 4.1),
+    ]),
+    "Year": WeekMonthYearScreenGenerator(
+      dataLineChart: [[1,1,1,1,1,1,1,1,1,1,1,1], [2,2,2,2,2,2,2,2,2,2,2,2], [3,3,3,3,3,3,3,3,3,3,3.3], [4,4,4,4,4,4,4,4,4,4,4,4]],
+        title: "Year", dataForHorizontalBar: [
+      FoodData("Uttapam", 3.3),
+      FoodData("Sambhar", 4.2),
+      FoodData("Nariyal Chutney", 3.1),
+      FoodData("Uttapam2", 4.3),
+      FoodData("Sambhar2", 4.2),
+      FoodData("Nariyal Chutney2", 4.1),
+      FoodData("Uttapam3", 3.3),
+      FoodData("Sambhar3", 4.2),
+      FoodData("Nariyal Chutney3", 4.1),
+      FoodData("Uttapam4", 4.3),
+      FoodData("Sambhar4", 3.2),
+      FoodData("Nariyal Chutney4", 4.1),
+    ]),
+  };
+
+  String returnedElement = "Day";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: backgroundColor,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 4),
+            child: IconButton(
+              onPressed: () { context.pushNamed(RouteConstants.issues);}, icon: Icon(Icons.edit_note, size: 30,),
+            ),
+          ),
+        ],
         title: Text(
           "Dashboard",
           style: TextStyle(color: primaryColor, fontSize: 40),
@@ -29,66 +98,76 @@ class Dashboard extends StatelessWidget {
               SizedBox(
                 height: 15,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Wrap(
+                spacing: 8,
                 children: [
-                  ChipBuild("Day", '/', fontsize: 15),
-                  ChipBuild("Week", '/', fontsize: 15),
-                  ChipBuild("Month", '/', fontsize: 15),
-                  ChipBuild("Year", '/', fontsize: 15),
+                  ActionChip(
+                      backgroundColor: backgroundColor,
+                      autofocus: true,
+                      shape: const StadiumBorder(
+                          side: BorderSide(color: Colors.white)),
+                      label: Text(
+                        "Day",
+                        style: TextStyle(color: Colors.white, fontSize: 17),
+                      ),
+                      labelPadding:
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+                      onPressed: () {
+                        setState(() {
+                          returnedElement = "Day";
+                        });
+                      }),
+                  ActionChip(
+                      backgroundColor: backgroundColor,
+                      autofocus: true,
+                      shape: const StadiumBorder(
+                          side: BorderSide(color: Colors.white)),
+                      label: Text(
+                        "Week",
+                        style: TextStyle(color: Colors.white, fontSize: 17),
+                      ),
+                      labelPadding:
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+                      onPressed: () {
+                        setState(() {
+                          returnedElement = "Week";
+                        });
+                      }),
+                  ActionChip(
+                      backgroundColor: backgroundColor,
+                      autofocus: true,
+                      shape: const StadiumBorder(
+                          side: BorderSide(color: Colors.white)),
+                      label: Text(
+                        "Month",
+                        style: TextStyle(color: Colors.white, fontSize: 17),
+                      ),
+                      labelPadding:
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+                      onPressed: () {
+                        setState(() {
+                          returnedElement = "Month";
+                        });
+                      }),
+                  ActionChip(
+                      backgroundColor: backgroundColor,
+                      autofocus: true,
+                      shape: const StadiumBorder(
+                          side: BorderSide(color: Colors.white)),
+                      label: Text(
+                        "Year",
+                        style: TextStyle(color: Colors.white, fontSize: 17),
+                      ),
+                      labelPadding:
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+                      onPressed: () {
+                        setState(() {
+                          returnedElement = "Year";
+                        });
+                      }),
                 ],
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 20,
-                    horizontal: 0.137 * (MediaQuery.of(context).size.width)),
-                child: Rating(),
-              ),
-              Container(
-                height: 300,
-                width: MediaQuery.of(context).size.width,
-                child: MainBarChartWidget(data: BarData.barData),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Accordion(
-                disableScrolling: true,
-                maxOpenSections: 4,
-                headerBackgroundColor: backgroundColor,
-                headerBackgroundColorOpened: primaryColor,
-                contentBackgroundColor: backgroundColor,
-                leftIcon: Icon(Icons.food_bank, color: Colors.white),
-                children: [
-                  AccordionSection(
-                    isOpen: true,
-                    header: Text('Breakfast',
-                        style: TextStyle(color: Colors.white, fontSize: 17)),
-                    content: Text('This is the introduction right here ...'),
-                  ),
-                  AccordionSection(
-                    isOpen: true,
-                    header: Text('Lunch',
-                        style: TextStyle(color: Colors.white, fontSize: 17)),
-                    content: Icon(Icons.airline_seat_flat,
-                        size: 120, color: Colors.blue[200]),
-                  ),
-                  AccordionSection(
-                    isOpen: true,
-                    header: Text('Snacks',
-                        style: TextStyle(color: Colors.white, fontSize: 17)),
-                    content:
-                        Icon(Icons.airplay, size: 70, color: Colors.green[200]),
-                  ),
-                  AccordionSection(
-                    isOpen: true,
-                    header: Text('Tea',
-                        style: TextStyle(color: Colors.white, fontSize: 17)),
-                    content:
-                        Icon(Icons.airplay, size: 70, color: Colors.green[200]),
-                  ),
-                ],
-              ),
+              Container(child: ScreenRenderer[returnedElement]),
             ],
           ),
         ),
