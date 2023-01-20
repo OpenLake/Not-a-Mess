@@ -1,13 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-
 import '../indicator.dart';
-
-// Currently this widget is hardcoded.
-// A constructor can be created to retrieve the data in the form of nested list
-// the data can be mapped into the LineBarsData using the method
-// LineChartBarDataHandler created just below this widget
 
 class LineChartGenerator extends StatelessWidget {
   final String weekMonthOrYear; // need input as "week", "month" or "year"
@@ -35,7 +29,7 @@ class LineChartGenerator extends StatelessWidget {
                 child: LineChart(
                   LineChartData(
                     titlesData: LineTitles.getTitleData(weekMonthOrYear),
-                    maxX: valForMaxX[weekMonthOrYear]! + 1,
+                    maxX: valForMaxX[weekMonthOrYear]! + 1, // + 1 is done just to avoid the graph touch the boundary of the cartesian.
                     maxY: 5,
                     minX: 0,
                     minY: 0,
